@@ -14,10 +14,12 @@
         {% block addToHead %} {% endblock %}
     </head>
 
-    <body>
+    {% block bodyOpenTag %} <body> {% endblock %}
         <div id="container">
             <header>
+                {% block header %}
                 <img src="/static/images/aloneInSpace.png" alt="alone in space logo">
+                {% endblock %}
             </header>
 
             <nav>

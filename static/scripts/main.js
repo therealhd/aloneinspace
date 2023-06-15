@@ -12,3 +12,8 @@ function clickedProfile() {
 function clickedLogin() {
     window.location.href = 'play'
 }
+
+function clickedPlay() {
+    document.getElementById("play_button_div").style.display = "none"
+    document.getElementById("game_frame").style.display = "block"
+}
