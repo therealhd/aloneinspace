@@ -12,14 +12,14 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/game')
-def game():
+@app.route('/play')
+def play():
     """
     Route to play game page
-    :return: game.html
+    :return: play.html
     """
 
-    return render_template('game.html')
+    return render_template('play.html')
 
 
 if __name__ == "__main__":

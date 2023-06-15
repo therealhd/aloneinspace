@@ -10,5 +10,5 @@ function clickedProfile() {
 }
 
 function clickedLogin() {
-    window.location.href = 'game'
+    window.location.href = 'play'
 }

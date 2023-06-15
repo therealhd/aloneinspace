@@ -5,6 +5,10 @@ body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, aud
     border: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
     height: 100%;
 }
@@ -22,6 +26,9 @@ header {
 }
 
 /* CSS for Nav */
+nav {
+    margin: 2%;
+}
 #nav_menu_list {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
@@ -37,7 +44,7 @@ header {
 
 #nav_menu_div a {
     background-color: #0C0954;
-    padding: 5% 10%;
+    padding: 5%;
     border-radius: 25px;
 }
 
@@ -88,4 +95,37 @@ header {
     color: #0C0954;
     border: none;
     border-radius: 5px;
+}
+
+/* CSS For Game */
+#game_play_box {
+    border: 1px solid #fff;
+    color: #fff;
+    min-height: 500px;
+    max-height: 550px;
+    min-width: 90%;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#play_button_div {
+    width: fit-content;
+    margin: auto;
+    vertical-align: center;
+}
+
+#play_button {
+    background-color: #0C0954;
+    color: #fff;
+    margin: auto;
+    padding: 30%;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    border: 5px #0C0954 outset;
+}
+
+#play_button:hover {
+    border: none;
 }
