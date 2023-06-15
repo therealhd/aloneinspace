@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Title{% endblock %}</title>
+        <link rel="stylesheet" href="../static/css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <script type="text/javascript" src="/static/scripts/main.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono&display=swap" rel="stylesheet">
+        {% block addToHead %} {% endblock %}
+    </head>
+
+    <body>
+        <div id="container">
+            <header>
+                <img src="/static/images/aloneInSpace.png" alt="alone in space logo">
+            </header>
+
+            <nav>
+                {% block navLinks %}
+                <div id="nav_menu_div">
+                    <ul id="nav_menu_list">
+                        <li id="blast_li"><a>BLAST OFF</a></li>
+                        <li id="leader_li"><a>LEADERBOARD</a></li>
+                        <li id="profile_li"><a onclick="clickedProfile()">PROFILE</a>
+                            <ul id="profile_sub_list">
+                                <li><a>STATS</a></li>
+                                <li><a>SETTINGS</a></li>
+                                <li><a>LOGOUT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                {% endblock %}
+            </nav>
+
+            <main>
+                {% block main %}
+
+
+                {% endblock %}
+            </main>
+
+        </div>
+    </body>
+
+
+</html>

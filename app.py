@@ -9,7 +9,7 @@ def index():
     Route to homepage
     :return: index.html
     """
-    return 'index.html'
+    return render_template('index.html')
 
 
 if __name__ == "__main__":

@@ -1,0 +1,66 @@
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* CSS for Body */
+body {
+    background-color: #020113;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* CSS for Header */
+header {
+    width: fit-content;
+    margin: auto;
+}
+
+/* CSS for Nav */
+#nav_menu_list {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    font-size: 1.5em;
+}
+
+#nav_menu_div li {
+    list-style-type: none;
+    text-decoration: none;
+    color: #fff;
+    font-style: italic;
+}
+
+#nav_menu_div a {
+    background-color: #06033a;
+    padding: 5%;
+    border-radius: 100%;
+}
+
+#profile_li {
+    grid-column: 10;
+}
+
+#profile_li a:hover, #leader_li a:hover, #blast_li a:hover {
+    background-color: rgba(255,255,255,0.3);
+}
+
+#leader_li {
+    grid-column: 9;
+}
+
+#blast_li {
+    grid-column: 8;
+}
+
+#nav_menu_list ul li {
+    margin: 15% auto;
+}
+
+#nav_menu_list ul {
+    display: none;
+}
