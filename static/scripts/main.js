@@ -8,3 +8,7 @@ function clickedProfile() {
         document.getElementById("profile_sub_list").style.display = "none";
     }
 }
+
+function clickedLogin() {
+    window.location.href = 'game'
+}

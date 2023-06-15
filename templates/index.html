@@ -1,0 +1,31 @@
+{% extends "default.html" %}
+
+{% block title %}Login{% endblock%}
+{% block navLinks %} <!-- Removing Navigation links from Login page --> {% endblock %}
+
+{% block main %}
+<section id="login_section">
+    <div id="login_box">
+        <h3>Login</h3>
+        <form id="login_form">
+            <table id="login_table">
+                <tr>
+                    <td><label for="username">Username: </label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+            </table>
+            <button type="submit" class="submit_button">SUBMIT</button>
+        </form>
+        <!--    Pseudo login button for developing purposes will remove-->
+        <button onclick="clickedLogin()">DEVELOPMENT SUBMIT</button>
+        <br>
+        <a>Need to create an account? Click Here!</a>
+    </div>
+
+</section>
+
+{% endblock %}

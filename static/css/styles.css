@@ -64,3 +64,8 @@ header {
 #nav_menu_list ul {
     display: none;
 }
+
+/* CSS For Login */
+#login_box {
+    color: #fff;
+}
