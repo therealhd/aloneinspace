@@ -11,7 +11,7 @@ html, body {
 
 /* CSS for Body */
 body {
-    background-color: #020113;
+    background-color: #030317;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -37,8 +37,8 @@ header {
 
 #nav_menu_div a {
     background-color: #0C0954;
-    padding: 5%;
-    border-radius: 100%;
+    padding: 5% 10%;
+    border-radius: 25px;
 }
 
 #profile_li {
