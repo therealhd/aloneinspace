@@ -6,7 +6,6 @@
 {% block main %}
 <section id="login_section">
     <div id="login_box">
-        <h3>Login</h3>
         <form id="login_form">
             <table id="login_table">
                 <tr>
@@ -18,12 +17,15 @@
                     <td><input type="password" name="password" id="password"></td>
                 </tr>
             </table>
-            <button type="submit" class="submit_button">SUBMIT</button>
+            <div id="login_submit_box">
+                <button type="submit" class="submit_button">Submit</button>
+            </div>
         </form>
-        <!--    Pseudo login button for developing purposes will remove-->
-        <button onclick="clickedLogin()">DEVELOPMENT SUBMIT</button>
         <br>
         <a>Need to create an account? Click Here!</a>
+        <!--    Pseudo login button for developing purposes will remove-->
+        <br>
+        <button onclick="clickedLogin()">DEVELOPMENT SUBMIT</button>
     </div>
 
 </section>

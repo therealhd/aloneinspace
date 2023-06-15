@@ -36,7 +36,7 @@ header {
 }
 
 #nav_menu_div a {
-    background-color: #06033a;
+    background-color: #0C0954;
     padding: 5%;
     border-radius: 100%;
 }
@@ -68,4 +68,24 @@ header {
 /* CSS For Login */
 #login_box {
     color: #fff;
+    width: fit-content;
+    margin: auto;
+}
+#login_table td {
+    padding: 10%;
+    font-size: 1.5em;
+}
+
+#login_submit_box {
+    width: fit-content;
+    margin: auto;
+}
+
+.submit_button {
+    font-family: 'Press Start 2P', cursive;
+    padding: 10%;
+    background-color: #fff;
+    color: #0C0954;
+    border: none;
+    border-radius: 5px;
 }
